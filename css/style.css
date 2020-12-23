@@ -1,11 +1,11 @@
 body, html {
+  background-color: white;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   font-family: "Helvetica", "Verdana", "Arial", sans-serif;
   font-size: 20px;
+  justify-content: center;
   line-height: 1.5;
-  background-color: white;
 }
 
 h1 {
@@ -14,6 +14,7 @@ h1 {
   text-align: center;
   font-size: 2rem;
   border: 5px solid #2e856e;
+  margin-top: 2em;
 }
 
 nav ul {
