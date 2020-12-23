@@ -10,24 +10,20 @@ body, html {
 
 h1 {
   background-color: #196751;
-  color: #ffffff;
-  text-align: center;
-  font-size: 2rem;
   border: 5px solid #2e856e;
+  color: #ffffff;
+  font-size: 2rem;
   margin-top: 2em;
+  text-align: center;
 }
 
 nav ul {
-  display: inline-flex;
   align-items: stretch;
+  display: inline-flex;
   justify-content: space-around;
-  position: fixed;
-  top: 0em;
   max-width: 100vw;
-}
-
-ul#generalMenu {
-  min-width: 100vw;
+  position: fixed;
+  top: 0;
 }
 
 li a {
@@ -35,29 +31,27 @@ li a {
   text-decoration: none;
 }
 
-#generalMenu {
+.menu {
   list-style-type: none;
+  min-width: 100vw;
   text-align: center;
 }
 
-#firstMenu a {
-  color: rgba(255, 255, 255, 0);
+nav a {
+  opacity: 0;
 }
 
-#firstMenu a:hover {
+nav a:hover {
   color: #196751;
-}
-
-#titleHeader {
-  margin-top: 5em;
+  opacity: 1;
 }
 
 h2 {
   background-color: #196751;
   color: #ffffff;
-  text-align: center;
-  font-size: 1.5rem;
   flex: 1 1;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .imgBoxes {
@@ -66,9 +60,9 @@ h2 {
 }
 
 .imgDesc {
+  border: 5px solid #259a7a;
   flex: 1 1 100vw;
   max-width: 320px;
-  border: 5px solid #259a7a;
   padding: 10px;
 }
 
@@ -77,11 +71,11 @@ ul.genInfo {
 }
 
 h3 {
-  flex: 1 1 100vw;
-  text-align: center;
   background-color: #196751;
   color: #ffffff;
+  flex: 1 1 100vw;
   font-size: 1rem;
+  text-align: center;
 }
 
 .ingredienTable {
@@ -94,10 +88,10 @@ h3 {
 }
 
 table p {
-  text-align: left;
-  padding-right: 2em;
   border-collapse: collapse;
   border-style: none;
+  padding-right: 2em;
+  text-align: left;
 }
 
 .ingredients tr:nth-child(even) {
